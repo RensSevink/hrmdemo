@@ -38,7 +38,8 @@ require_once APPROOT . '/Views/Includes/header.php';
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?php echo $applicant->Gender ?></td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?php echo $applicant->Place ?></td>
                                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                                    <a href="/applicant/edit/<?php echo $applicant->Id ?>" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
+                                    <a href="/applicant/edit/<?php echo $applicant->Id ?>" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only"></span></a>
+                                    <a href="/applicant/delete/<?php echo $applicant->Id ?>" class="text-indigo-600 hover:text-indigo-900">Delete<span class="sr-only"></span></a>
                                 </td>
                             </tr>
                             <?php endforeach; ?>
